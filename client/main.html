@@ -1,15 +1,18 @@
 <head>
   <title>JokeBox</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-6 text-center">
-        <h1 class="display-1">JokeBox</h1>
-      </div>
-    </div>
+  <div class="container mainContainer">
   </div>
-
-
 </body>
+
+<template name="appBody">
+  {{> Template.dynamic template=header}}
+  {{> Template.dynamic template=body}}
+  {{> Template.dynamic template=footer}}
+</template>
+
+
+ 

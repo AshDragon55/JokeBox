@@ -8,7 +8,7 @@ Template.createUserForm.events({
             confirmPwd.classList.add("errBox")
         }
         else {
-            Meteor.call('createNewUserAccount', username.value, pwd.value, (err, result) => {
+            Meteor.call('createNewUserAccount', username, password, (err, result) => {
                 if (err)
                     console.error(`create user error: ${err.reason}`)
                 else {

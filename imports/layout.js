@@ -1,7 +1,7 @@
 import '../lib/router.js'
 
 import './indexPage.html'
-// import './notFound.html'
+import './notFound.html'
 
 import './LoginForm.html'
 import './LoginForm.js'

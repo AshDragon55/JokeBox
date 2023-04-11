@@ -6,7 +6,7 @@ Meteor.startup(() => {
 });
 
 Meteor.methods({
-  createNewUserAccounts(user, pwd) {
+  createNewUserAccount(user, pwd) {
     //create a JSON object with the user’s credential
     let options = {
       'username' : user,

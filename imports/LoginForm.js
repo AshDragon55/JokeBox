@@ -13,7 +13,7 @@ Template.loginForm.events({
                 if (result) {
                     console.debug(`result: ${result}`)
                 }
-                FlowRouter.go('ShowJoke')
+                FlowRouter.go('Showjoke')
             }
         })
         console.warn(`loggin in with username: ${username} and password: ${password}`)

@@ -9,5 +9,11 @@ import './LoginForm.js'
 import './navBar.html'
 import './navBar.js'
 
+import './createUserForm.html'
+import './createUserForm.js'
+
+import './ShowJoke.html'
+import './ShowJoke.js'
+
 
 

@@ -19,7 +19,9 @@ let getJoke = ()=>{
 }
 
 Template.Showjoke.onCreated(()=>{
-    setInterval(getJoke(), 5000)
+    // setInterval(getJoke(), 5000)
+    setInterval(getJoke, 5000);
+
 })
 
 

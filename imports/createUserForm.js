@@ -15,6 +15,7 @@ Template.createUserForm.events({
                     if (result)
                         console.debug(`success: ${result}`)
                 }
+                
             })
         }
     }

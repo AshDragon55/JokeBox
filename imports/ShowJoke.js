@@ -31,5 +31,11 @@ Template.Showjoke.helpers({
     }
 })
 
+Template.Showjoke.events({
+    "click .js-AddJoke"(){
+        let thejoke=document.querySelector(".GetJoke")
+        console.log(thejoke.innerHTML)
+    }
+})
 
 

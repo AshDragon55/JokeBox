@@ -1,5 +1,8 @@
 Template.createUserForm.events({
     'click .js-createUser'() {
+        let firstname = document.querySelector("nu-fname")
+        let lastname = document.querySelector("nu-lname")
+        let Email = document.querySelector("nu-email")
         let username = document.querySelector("#nu-name")
         let password = document.querySelector("#nu-password")
         let confirmPwd = document.querySelector("#nu-confirmPassword")
@@ -15,6 +18,7 @@ Template.createUserForm.events({
                     if (result)
                         console.debug(`success: ${result}`)
                 }
+               
                 
             })
         }

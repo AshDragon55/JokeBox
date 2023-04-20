@@ -25,5 +25,12 @@ Template.loginForm.events({
         console.log('show create user dialog')
         FlowRouter.go('createUser')
         // createUserModal.show()
+    },
+
+    'click .js-Cancel'(){
+        // document.querySelector("#login-name").value==
+        // document.querySelector("#login-password").value
+        FlowRouter.go('index')
+
     }
 })

@@ -10,32 +10,19 @@ let getJoke = ()=>{
             Accept: 'application/json'
         }
     })
-    .then(response => response.json()) // convert promise data to json
-    .then(data => {
-        console.log(data)
-        Session.set('myJoke', data.joke)
-    }) 
-    .catch(err => console.error(err));
+
+.then(response => response.json())
+        .then(data => {
+            document.querySelector("#jokeId").innerHTML = data.id
+            document.querySelector("#jokeData").innerHTML = data.joke
+            console.log(data)
+        })
 }
 
-Template.Showjoke.onCreated(()=>{
-    // setInterval(getJoke(), 5000)
-    setInterval(getJoke, 5000);
+Template.Showjoke.onCreated(function () {
+    getJoke()
+    setInterval(getJoke, 5000)
+}),
 
-})
-
-
-Template.Showjoke.helpers({
-    dayJoke(){
-        return Session.get('myJoke')
-    }
-})
-
-Template.Showjoke.events({
-    "click .js-AddJoke"(){
-        let thejoke=document.querySelector(".GetJoke")
-        console.log(thejoke.innerHTML)
-    }
-})
 
 

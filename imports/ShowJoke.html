@@ -1,11 +1,13 @@
-<template name="Showjoke">
-    <div class="row">
-        <div class="col-xl-8">
-            <p class="GetJoke">{{dayJoke}}</p>
+ <template name="Showjoke">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <h1 class="display-1">Here's a joke</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xl-8">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <input type="hidden" id="jokeId">
+            <p class="fs-1" id="jokeData">Loading...</p>
             <button class="btn btn-primary js-AddJoke" >add joke</button>
         </div>
     </div>

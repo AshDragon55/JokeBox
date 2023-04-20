@@ -22,7 +22,7 @@ let getJoke = ()=>{
 Template.Showjoke.onCreated(function () {
     getJoke()
     setInterval(getJoke, 5000)
-}),
+})
 
 
 

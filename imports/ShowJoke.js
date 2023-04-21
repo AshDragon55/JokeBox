@@ -20,7 +20,7 @@ let getJoke = ()=>{
 
 Template.Showjoke.onCreated(function () {
     getJoke()
-    setInterval(getJoke, 10000)
+    setInterval(getJoke, 900000)
 }),
 
 
@@ -31,5 +31,7 @@ Template.Showjoke.events({
         console.log(Jokeid,Joke)
     }
 })
+
+
 
 

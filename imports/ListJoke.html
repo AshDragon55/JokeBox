@@ -1,0 +1,36 @@
+<template name="ListJoke">
+    {{#if ListEmpty}}
+    <div class="row justify-content-center m-5 p-5">
+        <div class="col-xl-10 m-5 p-5 text-center">
+            <h1 class="display-4">No List Detected</h1>
+        </div>
+    </div>
+    {{else}}
+    <div class="row">
+        <div class="col-lg-6">
+            <h6>Filter:</h6>
+            <button class="btn btn-primary js-AddJoke" >add joke</button>
+            <button class="btn btn-info js-filterAll">All</button>
+        </div>
+    </div>
+    <div class="row">
+        {{#each profiles}}
+        <div class="col-lg-4 text-center prof">
+            <div class="border border-2 border-primary m-3 p-3">
+                <div class="col-lg-10 imgFrame overflow-hidden">
+                    <img class="w-100" src="{{profile}}" alt="">
+                </div>
+                <!-- {{> starsRating class='myRating' rating=rating size=40}} -->
+                <p class="fs-3">{{first}} {{surname}}, {{age}}</p>
+                <a href="/view/{{_id}}"><i class="bi bi-binoculars"></i></a>
+                {{#if owned}}
+                <a href="/edit/{{_id}}"><i class="bi bi-pencil"></i></a>
+                <i class="bi bi-file-earmark-x js-delete"></i>
+                {{/if}}
+                {{> rating}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</template>

@@ -14,13 +14,13 @@ let getJoke = ()=>{
     .then(data => {
         document.querySelector("#jokeId").value = data.id
         document.querySelector("#jokeData").innerHTML = data.joke
-        console.log(data)
+        // console.log(data)
     })
 }
 
 Template.Showjoke.onCreated(function () {
     getJoke()
-    setInterval(getJoke, 900000)
+    setInterval(getJoke, 12000)
 }),
 
 
@@ -29,9 +29,14 @@ Template.Showjoke.events({
        let Jokeid = document.querySelector("#jokeId").value
         let Joke = document.querySelector("#jokeData").innerHTML
         console.log(Jokeid,Joke)
+        // find jid first
+        // if none then insert
+        JokeBoxdb.insert({
+            "JokeId": Jokeid,
+            "JokeData": Joke
+        })
     }
 })
-
 
 
 

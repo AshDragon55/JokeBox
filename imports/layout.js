@@ -15,5 +15,10 @@ import './createUserForm.js'
 import './ShowJoke.html'
 import './ShowJoke.js'
 
+import './Home.js'
+import './Home.html'
+
+import './ListJoke.html'
+import './ListJoke.js'
 
 

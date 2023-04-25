@@ -14,20 +14,21 @@
         </div>
     </div>
     <div class="row">
-        {{#each profiles}}
+        {{#each ListJoke}}
         <div class="col-lg-4 text-center prof">
             <div class="border border-2 border-primary m-3 p-3">
                 <div class="col-lg-10 imgFrame overflow-hidden">
-                    <img class="w-100" src="{{profile}}" alt="">
+                    <!-- <img class="w-100" src="{{profile}}" alt=""> -->
+                    {{JokeData}}
                 </div>
-                <!-- {{> starsRating class='myRating' rating=rating size=40}} -->
+                <!-- {{> starsRating class='myRating' rating=rating size=40}}
                 <p class="fs-3">{{first}} {{surname}}, {{age}}</p>
                 <a href="/view/{{_id}}"><i class="bi bi-binoculars"></i></a>
                 {{#if owned}}
                 <a href="/edit/{{_id}}"><i class="bi bi-pencil"></i></a>
                 <i class="bi bi-file-earmark-x js-delete"></i>
                 {{/if}}
-                {{> rating}}
+                {{> rating}} -->
             </div>
         </div>
         {{/each}}

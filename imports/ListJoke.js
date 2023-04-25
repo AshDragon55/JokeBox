@@ -14,6 +14,9 @@ Template.ListJoke.helpers({
         if (JokeBoxdb.find().count() > 0)
             return false
         return true
+    },
+    ListJoke(){
+        return JokeBoxdb.find()
     }
 })
 Template.ListJoke.events({

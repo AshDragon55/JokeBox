@@ -17,8 +17,14 @@ Template.Rating.events({
                 }
             })
     },
-    'click .js-rate'() {
-        console.warn("leave me alone")
+
+    'click .js-like'() {
+        JokeBoxdb.update({ _id: this._id },
+            {
+               
+
+            })
+        // console.warn("You Like This Post")
     },
 
     'click .js-dislike'(){
@@ -26,4 +32,3 @@ Template.Rating.events({
     }
 })
 
-// mouseover

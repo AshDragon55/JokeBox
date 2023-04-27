@@ -19,12 +19,12 @@ Template.Rating.events({
     },
 
     'click .js-like'() {
+      
         JokeBoxdb.update({ _id: this._id },
-            {
-               
-
-            })
-        // console.warn("You Like This Post")
+            
+                {$inc: {like:1}}
+                
+            )
     },
 
     'click .js-dislike'(){

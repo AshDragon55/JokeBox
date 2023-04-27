@@ -20,16 +20,16 @@
                 <div class="col-lg-10 imgFrame overflow-hidden">
                     <!-- <img class="w-100" src="{{profile}}" alt=""> -->
                     {{JokeData}}
-                    {{Ratings}}
+                    
                 </div>
-                <!-- {{> starsRating class='myRating' rating=rating size=40}}
-                <p class="fs-3">{{first}} {{surname}}, {{age}}</p>
-                <a href="/view/{{_id}}"><i class="bi bi-binoculars"></i></a>
+                <!-- {{> starsRating class='myRating' rating=rating size=40}}  -->
+                <!-- <p class="fs-3">{{first}} {{surname}}, {{age}}</p>  -->
+                <!-- <a href="/view/{{_id}}"><i class="bi bi-binoculars"></i></a> -->
                 {{#if owned}}
-                <a href="/edit/{{_id}}"><i class="bi bi-pencil"></i></a>
-                <i class="bi bi-file-earmark-x js-delete"></i>
+                <!-- <a href="/edit/{{_id}}"><i class="bi bi-pencil"></i></a> -->
+                <!-- <i class="bi bi-file-earmark-x js-delete"></i> -->
                 {{/if}}
-                {{> rating}} -->
+                {{> Rating}}
             </div>
         </div>
         {{/each}}

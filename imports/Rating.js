@@ -17,7 +17,13 @@ Template.Rating.events({
                 }
             })
     },
-    'mouseover .js-rate'() {
+    'click .js-rate'() {
         console.warn("leave me alone")
+    },
+
+    'click .js-dislike'(){
+        console.warn("You Dislike This Post")
     }
 })
+
+// mouseover

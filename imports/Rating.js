@@ -18,17 +18,25 @@ Template.Rating.events({
             })
     },
 
+    
+
     'click .js-like'() {
-      
+        console.log()
         JokeBoxdb.update({ _id: this._id },
             
                 {$inc: {like:1}}
                 
             )
+            
     },
 
     'click .js-dislike'(){
-        console.warn("You Dislike This Post")
+        JokeBoxdb.update({_id: this._id},
+
+            {$inc:{dislike:-1}}
+        )
+   
+
     }
 })
 
